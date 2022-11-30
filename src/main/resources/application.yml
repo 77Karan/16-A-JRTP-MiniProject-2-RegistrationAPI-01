@@ -1,0 +1,32 @@
+server:
+  port: 9090
+  
+  
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: ADMIN123
+    url: jdbc:oracle:thin:@localhost:1521/ORCL2
+    username: ADMIN
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: Hornadu18$
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: karanmanjukumar@gmail.com
+
+reg-app:
+  messages:
+    regMailSubject: User Registration Sucess
+    regMailBodyTemplateFile: UNLOCK-ACC-EMAILBODY-TEMPLATE.txt
+    
+    
